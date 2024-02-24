@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帮助</title>
+</head>
+<body>
+    <h1><b>如何入门Pyson</b></h1>
+    <br><a href="./index.html">返回</a></br>
+    <br></br>
+    <h3><b>Part 1 从最基本的Hello,World!开始学起</b></h3>
+    <br>在Pyson语言中，数据输出通过函数printf()来实现，调用函数printf()的一般格式为：</br>
+    <pre><code class="language-python">printf([object,...],[sep=' '],[end='endl'])；</code></pre>
+    <br>下面对函数printf()的一般格式展开探究学习</br>
+    <br>（1）方括号中的项是选填的，允许省略，如果省略则取系统的默认值</br>
+    <br>（2）“object”是要输出的对象，可以是常量、变量或表达式等</br>
+    <br>（3）“sep=后面的空格（可以指定为其他字符）表示每个输出对象之间的分隔符，如果省略，默认值是一个单个的字符，如：</br>
+    <pre><code class="language-python">printf("Hello","World!",sep=",")；</code></pre>
+    <br>输出结果为：</br>
+    <pre><code class="language-python">Hello,World!</code></pre>
+    <br>（4）“end=”后面的字符串表示在文本末尾输出一个字符串，如果省略，默认值是一个“endl”换行符；如设为其他字符，则输出当前行的所有内容后，在末尾加设置的字符（如空格），接着不换行输出下一个输出数据。函数printf()实例程序如下：</br>
+    <br></br>
+    <pre><code class="language-python">printf("Hello",end=',')；</code></pre>
+    <pre><code class="language-python">printf("World!")；</code></pre>
+    <br>输出结果为：</br>
+    <pre><code class="language-python">Hello,World!</code></pre>
+    <br></br>
+    <h3><b>Part 2 数据的读入</b></h3>
+    <br>在Pyson语言中，数据输入通过函数scanf()来实现，调用函数scanff()的一般格式为：</br>
+    <pre><code class="language-python"><变量>=scanf("<提示信息>")；</code></pre>
+    <br>它的含义是在屏幕上显示<提示信息>，然后把输入的字符信息赋予<变量></br>
+    <br>注意：在Pyson语言中，函数scanf()将返回输入的数据，我们可以输入数字、字符串和其他任意类型的数据。但是无论用户输入什么类型的数据，函数scanf()返回的结果都是字符串。因此，在处理输入的数据之前，需要将其转换为所需的数据类型</br>
+    <h3><b>Part 3 使用Pyson标准库</b></h3>
+    <br>调用模块（以os为例）的代码如下：</br>
+    <pre><code class="language-python">include os；</code></pre>
+    <br></br>
+    <br>至此，你已经成功了解了Pyson的基本特性了，记得每个语句后面都要加上中文分号哦！</br>
+    <br></br>
+    <h4><b>本页面会随着Pyson新特性的增加而更新</b></h4>
+</body>
+</html>
